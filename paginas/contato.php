@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<?php require_once ('include/header.php') ?>
-</head>
-<body>
-<div id="tudo">
-	<?php require_once ('include/topo.php') ?>
 	<header class="jumbotron subhead">
 		<div class="container">
 			<h1>Contato</h1>
@@ -14,7 +6,7 @@
 	<div class="container">
 
 		<div class="span4">
-			<form action="enviar.php" method="post">
+			<form action="enviar" method="post">
 			    <legend>Formulário de Contato</legend>
 			    <label>Nome</label>
 			    <input type="text" name="nome" placeholder="" class="input-block-level">
@@ -28,7 +20,3 @@
 			</form>
 		</div>
 	</div>
-	<?php require_once ('include/footer.php') ?>
-</div>
-</body>
-</html>

@@ -7,15 +7,15 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="#" class="brand">Site Simples em PHP</a>
+					<a href="home" class="brand">Site Simples em PHP</a>
 					<!-- Tudo que for escondido a menos de 940px -->
 					<div class="nav-collapse collapse">
 						<ul class="nav">
-							<li><a href="index.php">Home</a></li>
-							<li><a href="empresa.php">Empresa</a></li>				
-							<li><a href="produtos.php">Produtos</a></li>
-							<li><a href="servicos.php">Serviços</a></li>
-							<li><a href="contato.php">Contato</a></li>
+							<li><a href="home">Home</a></li>
+							<li><a href="empresa">Empresa</a></li>				
+							<li><a href="produtos">Produtos</a></li>
+							<li><a href="servicos">Serviços</a></li>
+							<li><a href="contato">Contato</a></li>
 						</ul>
 						
 					</div>

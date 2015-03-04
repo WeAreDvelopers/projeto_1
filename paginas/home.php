@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<?php require_once ('include/header.php') ?>
-</head>
-<body>
-<div id="tudo">
-	<?php require_once ('include/topo.php') ?>
-	<header class="jumbotron subhead">
+<header class="jumbotron subhead">
 		<div class="container">
-			<h1>Produtos</h1>
+			<h1>Home</h1>
 		</div>
 	</header>
 	<div class="container">
@@ -19,7 +11,3 @@
 		Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
 		</p>	
 	</div>
-	<?php require_once ('include/footer.php') ?>
-</div>
-</body>
-</html>

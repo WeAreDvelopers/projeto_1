@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<?php require_once ('include/header.php') ?>
-</head>
-<body>
-<div id="tudo">
-	<?php require_once ('include/topo.php') ?>
 	<header class="jumbotron subhead">
 		<div class="container">
 			<h1>Contato</h1>
@@ -24,7 +16,3 @@
 			?>
 		</div>
 	</div>
-	<?php require_once ('include/footer.php') ?>
-</div>
-</body>
-</html>
