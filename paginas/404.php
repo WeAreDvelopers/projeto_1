@@ -4,7 +4,7 @@
 		</div>
 	</header>
 	<div class="container">
-
+		<?php http_response_code(404); ?>
 		<p>
 		</p>
 			
