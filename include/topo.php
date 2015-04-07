@@ -11,13 +11,24 @@
 					<!-- Tudo que for escondido a menos de 940px -->
 					<div class="nav-collapse collapse">
 						<ul class="nav">
-							<li><a href="home">Home</a></li>
-							<li><a href="empresa">Empresa</a></li>				
-							<li><a href="produtos">Produtos</a></li>
-							<li><a href="servicos">Serviços</a></li>
-							<li><a href="contato">Contato</a></li>
+							<?php
+								$sql = "Select titulo,url from pg_conteudo";
+								$stmt = $conn->prepare($sql);
+								$stmt->execute();
+								$links = $stmt->fetchAll(PDO::FETCH_ASSOC);
+								foreach($links as $menu){
+									echo "<li><a href=\"{$menu['url']}\">{$menu['titulo']}</a></li>";
+								}
+							?>
+							
 						</ul>
 						
+					</div>
+					<div class="input-append navbar-search pull-right">
+						<form class="form-group" id="form-pesquisa" action="busca.php" method="GET">
+					 		<input class="span2" id="pesquisa" name="pesquisa" placeholder="Pesquisar..." type="text">
+					  		<button class="btn " id="send" type="submit"><i class="icon-search"></i></button>
+					  	</form>
 					</div>
 			</div>
 		</div>

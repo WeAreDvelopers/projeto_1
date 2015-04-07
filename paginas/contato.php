@@ -1,9 +1,4 @@
-	<header class="jumbotron subhead">
 		<div class="container">
-			<h1>Contato</h1>
-		</div>
-	</header>
-	<div class="container">
 
 		<div class="span4">
 			<form action="enviar" method="post">

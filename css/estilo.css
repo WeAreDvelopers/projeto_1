@@ -94,4 +94,12 @@ html, body {height:100%;}
   display: none;
 }
 
+.clear{
+clear: both;
 
+}
+ul.list-resultado{
+  list-style: none;
+  margin-bottom: 110px;
+
+}
