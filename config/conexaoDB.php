@@ -21,27 +21,5 @@ function conexaoDB(){
 
 	}
 }
-function fixture(){
-	$conn = conexaoDB();
-	$table = "fixture";
-	
-	//Removendo tabela se existe;
-	$conn->query("DROP TABLE IF EXISTS {$table};");
-	
-	//Criando tabela
-	$conn->query("CREATE TABLE {$table} (
-	id INT NOT NULL AUTO_INCREMENT,
-	nome VARCHAR(45) CHARACTER SET 'utf8' NULL,
-	PRIMARY KEY(id));");
-	
-	//Inserindo dados de Teste
-	for($i = 1; $i<=10;$i++){
-		$nome = "DADOS DE TESTE {$i}";
-		$smt = $conn->prepare("INSERT INTO {$table}(nome) VALUE (:nome);");
-		$smt->bindParam(":nome",$nome);
-		$smt->execute();
 
-	}
-};
-fixture();
 ?>

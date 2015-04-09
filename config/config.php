@@ -2,7 +2,7 @@
 return array(
 	'db' => array(
 		'host' 		=> 'localhost',
-		'db_name' 	=> 'projeto_rw',
+		'db_name' 	=> 'fixture',
 		'user'		=> 'root',
 		'password' 	=> 'root'
 		)
