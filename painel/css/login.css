@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+  background: #ededed;
+}
+.container{
+	height: 100%;
+}
+.form-login{
+	width: 90%;
+	margin: 15% auto;
+	max-width: 300px;
+	padding: 2.5%;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 3px #ccc;
+}

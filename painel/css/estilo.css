@@ -1,0 +1,20 @@
+body{
+	background: #ededed;
+}
+.tabela-paginas{
+	max-width: 600px;
+	margin: 5% auto;
+	background: #fff;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0 0 3px #ccc;
+}
+caption{
+	font-size: 1.6em;
+	font-weight: bold;
+	display: block;
+}
+.logout{
+	float: right;
+	margin: 15px;
+}

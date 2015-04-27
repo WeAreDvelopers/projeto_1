@@ -23,7 +23,11 @@ $paginas = $stmt->fetch(PDO::FETCH_ASSOC);
 </head>
 <body>
 <div id="tudo">
-	<?php require_once ('include/topo.php'); ?>
+	<?php require_once ('include/topo.php'); 
+	
+	if($cont != 0){
+	?>
+   
     <header class="jumbotron subhead">
 		<div class="container">
 			<h1><?php echo $paginas['titulo']; ?></h1>
@@ -31,15 +35,21 @@ $paginas = $stmt->fetch(PDO::FETCH_ASSOC);
 	</header>
 	<div class="container">
 		<?php 
-		if($url == "contato"){
-			include('paginas/contato.php');
-		}else{
-			echo $paginas['conteudo']; 
-		}
+		
+			if($url == "contato"){
+				include('paginas/contato.php');
+			}else{
+				echo $paginas['conteudo']; 
+			}
+		
 	 ?>
 	</div>
 	
-	<?php require_once ('include/footer.php'); ?>
+	<?php 
+	}else{
+		include('paginas/404.php');
+	}
+	require_once ('include/footer.php'); ?>
 </div>
 </body>
 </html>

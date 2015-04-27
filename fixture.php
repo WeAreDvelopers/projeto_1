@@ -5,8 +5,9 @@ echo "### EXECUTANDO FIXTURE<br>";
 
 $conn = conexaoDB();
 
-echo "Remomendo tabela<br>";
+echo "Removendo tabela<br>";
 $conn->query("DROP TABLE IF EXISTS pg_conteudo;");
+$conn->query("DROP TABLE IF EXISTS adm_user;");
 echo " - OK<br>";
 echo "Criando tabela<br>";
 $conn->query("CREATE TABLE pg_conteudo (
@@ -15,6 +16,11 @@ $conn->query("CREATE TABLE pg_conteudo (
   	`url` varchar(300) DEFAULT NULL,
  	`conteudo` text,
 	PRIMARY KEY(id));");
+$conn->query("CREATE TABLE adm_user (
+	id_user INT NOT NULL AUTO_INCREMENT,
+	`login` varchar(300) DEFAULT NULL,
+  	`password` varchar(300) DEFAULT NULL,
+	PRIMARY KEY(id_user));");
 echo " - OK\n";
 
 echo "inserindo dados<br>";
@@ -51,6 +57,15 @@ echo "inserindo dados<br>";
 
 	}
 
-
+		$login = 'admin';
+		$senha = password_hash("123456",PASSWORD_DEFAULT);
+		$smt = $conn->prepare("INSERT INTO adm_user (login, password) VALUE(:login, :password);");
+		$smt->bindParam(":login",$login);
+		$smt->bindParam(":password",$senha);
+		$smt->execute();
 echo "##### CONCLÚIDO ####";
+
+
+
+
 ?>
